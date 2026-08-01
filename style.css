@@ -773,7 +773,7 @@ header{
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:30px;
+    gap:50px;
 
     margin-top:60px;
 
@@ -792,6 +792,7 @@ header{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
+    padding:30px;
 
 }
 
@@ -1215,9 +1216,9 @@ footer{
 
     /* NAVIGATION */
 
-    .hamburger{
-        display:block;
-    }
+   .hamburger{
+    display:none;
+}
 
     header{
         background:rgba(255,255,255,.92);
