@@ -1386,3 +1386,74 @@ footer{
     cursor:pointer;
 }
 }
+
+
+/* ===========================
+        PAGE ANIMATIONS
+=========================== */
+
+.fade-up{
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* Image animation */
+
+.hero-image img,
+.about-image img,
+.gallery-grid img{
+
+    animation: fadeIn 1s ease forwards;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:scale(.95);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+
+/* Card hover animation */
+
+.service-card,
+.benefit-card,
+.price-card,
+.testimonial-card,
+.feature{
+
+    transition:.4s ease;
+
+}
+
+.service-card:hover,
+.benefit-card:hover,
+.price-card:hover,
+.testimonial-card:hover,
+.feature:hover{
+
+    transform:translateY(-10px);
+
+}
